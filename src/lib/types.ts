@@ -34,7 +34,10 @@ export type JunkDrawerType =
   | "domain"
   | "note"
   | "observation"
-  | "book";
+  | "book"
+  | "comic"
+  | "interesting game theory"
+  | "map";
 
 export interface JunkDrawerItem {
   id: string;
