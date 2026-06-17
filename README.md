@@ -1,5 +1,7 @@
 # Abby is thinking
 
+Abby's collection of thoughts.
+
 A minimal personal portfolio with an interactive 3D aesthetic — inspired by [Thrive Capital](https://www.thrivecap.com), [Cursor Compile](https://cursor.com/compile), and [Cursor Origin](https://cursor.com/origin).
 
 ## Features
