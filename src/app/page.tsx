@@ -61,9 +61,7 @@ export default function Home() {
 
       <Navigation
         active={activeSection}
-        onSelect={(id) =>
-          setActiveSection((prev) => (prev === id ? null : id))
-        }
+        onSelect={(id) => setActiveSection(id)}
       />
 
       <ContentPanel
@@ -71,7 +69,11 @@ export default function Home() {
         onClose={() => setActiveSection(null)}
       >
         {activeSection && (
-          <SectionContent sectionId={activeSection} data={data} />
+          <SectionContent
+            key={activeSection}
+            sectionId={activeSection}
+            data={data}
+          />
         )}
       </ContentPanel>
     </main>

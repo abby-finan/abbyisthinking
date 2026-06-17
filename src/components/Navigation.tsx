@@ -9,7 +9,7 @@ interface NavigationProps {
 
 export function Navigation({ active, onSelect }: NavigationProps) {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-30 px-4 pb-6 pt-4">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 px-4 pb-6 pt-4">
       <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-4 gap-y-2">
         {SECTIONS.map((section) => {
           const isActive = active === section.id;

@@ -1,7 +1,7 @@
 import { PortfolioData } from "./types";
 
 export const DEFAULT_DATA: PortfolioData = {
-  birthDate: "1995-06-15T00:00:00",
+  birthDate: "2001-08-29T00:00:00",
   familyOrigin: "Update me",
   citiesLived: ["San Francisco", "New York"],
   countriesVisited: ["USA", "France", "Japan", "Mexico"],

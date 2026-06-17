@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { computeAge } from "@/lib/storage";
 import { PortfolioData } from "@/lib/types";
-import { ItemList, ItemText, ItemMeta } from "../ContentPanel";
+import { ItemList, ItemText, ItemMeta, linkifyText } from "../ContentPanel";
 
 function LiveAge({ birthDate }: { birthDate: string }) {
   const [age, setAge] = useState(computeAge(birthDate));
@@ -68,14 +68,9 @@ export function JunkDrawerSection({ data }: { data: PortfolioData }) {
           <ItemText>{item.title}</ItemText>
           <ItemMeta>{item.content}</ItemMeta>
           {item.url && (
-            <a
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-1 block text-[11px] text-[var(--text-muted)]/50 hover:text-[var(--text-muted)]"
-            >
-              {item.url}
-            </a>
+            <p className="mt-1 text-[11px] font-light text-[var(--text-muted)]/50">
+              {linkifyText(item.url)}
+            </p>
           )}
         </div>
       ))}
@@ -90,7 +85,12 @@ export function IdeaGraveyardSection({ data }: { data: PortfolioData }) {
         <div key={item.id}>
           <ItemText>{item.title}</ItemText>
           <ItemMeta>{item.description}</ItemMeta>
-          {item.whyItDied && <ItemMeta>{item.whyItDied}</ItemMeta>}
+          {item.whyItDied && (
+            <p className="mt-1 text-[11px] font-light tracking-wide text-[var(--text-muted)]/50">
+              <span className="text-[var(--text-muted)]/70">Reason it died: </span>
+              {linkifyText(item.whyItDied)}
+            </p>
+          )}
         </div>
       ))}
     />
@@ -137,7 +137,10 @@ export function WorthYourTimeSection({ data }: { data: PortfolioData }) {
 export function StatsSection({ data }: { data: PortfolioData }) {
   return (
     <div className="space-y-8">
-      <LiveAge birthDate={data.birthDate} />
+      <div>
+        <ItemMeta>alive since August 29, 2001</ItemMeta>
+        <LiveAge birthDate={data.birthDate} />
+      </div>
 
       {data.familyOrigin && (
         <div>
@@ -166,7 +169,7 @@ export function StatsSection({ data }: { data: PortfolioData }) {
             <div key={stat.id}>
               <ItemMeta>{stat.label}</ItemMeta>
               <ItemText>
-                {stat.value}
+                {String(stat.value)}
                 {stat.unit ? ` ${stat.unit}` : ""}
               </ItemText>
             </div>

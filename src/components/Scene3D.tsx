@@ -2,46 +2,46 @@
 
 import { useEffect, useRef } from "react";
 
+function setRotation(el: HTMLElement, clientX: number, clientY: number) {
+  const rotY = (clientX / window.innerWidth - 0.5) * 360;
+  const rotX = (clientY / window.innerHeight - 0.5) * -50;
+  el.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+}
+
 export function Scene3D({ visible = true }: { visible?: boolean }) {
   const titleRef = useRef<HTMLDivElement>(null);
-  const target = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
-    const onMove = (e: MouseEvent) => {
-      target.current.y = (e.clientX / window.innerWidth - 0.5) * 360;
-      target.current.x = (e.clientY / window.innerHeight - 0.5) * -50;
+    const onMouseMove = (e: MouseEvent) => {
+      if (titleRef.current) setRotation(titleRef.current, e.clientX, e.clientY);
     };
-    window.addEventListener("mousemove", onMove);
-    return () => window.removeEventListener("mousemove", onMove);
-  }, []);
 
-  useEffect(() => {
-    const current = { x: 0, y: 0 };
-    let frame = 0;
-
-    const animate = () => {
-      current.x += (target.current.x - current.x) * 0.06;
-      current.y += (target.current.y - current.y) * 0.06;
-      if (titleRef.current) {
-        titleRef.current.style.transform = `rotateX(${current.x}deg) rotateY(${current.y}deg)`;
+    const onTouchMove = (e: TouchEvent) => {
+      const touch = e.touches[0];
+      if (touch && titleRef.current) {
+        setRotation(titleRef.current, touch.clientX, touch.clientY);
       }
-      frame = requestAnimationFrame(animate);
     };
 
-    frame = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(frame);
+    window.addEventListener("mousemove", onMouseMove, { passive: true });
+    window.addEventListener("touchmove", onTouchMove, { passive: true });
+
+    return () => {
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("touchmove", onTouchMove);
+    };
   }, []);
 
   if (!visible) return null;
 
   return (
     <div
-      className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center"
+      className="absolute inset-0 z-0 flex items-center justify-center touch-none"
       style={{ perspective: "900px" }}
     >
       <div
         ref={titleRef}
-        className="font-mono text-[11px] font-normal tracking-wide text-[var(--text-muted)] select-none"
+        className="title-3d font-mono text-[11px] font-normal tracking-wide text-[var(--text-muted)] select-none"
         style={{ transformStyle: "preserve-3d" }}
       >
         abby is thinking
