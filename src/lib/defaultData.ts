@@ -2,9 +2,9 @@ import { PortfolioData } from "./types";
 
 export const DEFAULT_DATA: PortfolioData = {
   birthDate: "2001-08-29T00:00:00",
-  familyOrigin: "Update me",
-  citiesLived: ["San Francisco", "New York"],
-  countriesVisited: ["USA", "France", "Japan", "Mexico"],
+  familyOrigin: "San Sostene, province of Catanzaro, Calabria, Italy",
+  citiesLived: ["Raleigh", "Atlanta", "New York"],
+  countriesVisited: ["USA", "Portugal", "Italy", "France", "Spain", "Mexico", "Canada", "Dominican Republic", "Bahamas", "Jamaica", "Cuba"],
   thinking: [
     {
       id: "t1",

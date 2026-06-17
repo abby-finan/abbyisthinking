@@ -138,7 +138,7 @@ export function StatsSection({ data }: { data: PortfolioData }) {
   return (
     <div className="space-y-8">
       <div>
-        <ItemMeta>alive since August 29, 2001</ItemMeta>
+        <ItemMeta>alive</ItemMeta>
         <LiveAge birthDate={data.birthDate} />
       </div>
 
