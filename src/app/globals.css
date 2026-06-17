@@ -77,10 +77,6 @@ body {
   animation-duration: 26s;
 }
 
-.title-3d {
-  transition: transform 0.12s ease-out;
-}
-
 @media (max-width: 768px) {
   .gradient-orb {
     animation: none;
@@ -92,9 +88,5 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .gradient-orb {
     animation: none;
-  }
-
-  .title-3d {
-    transition: none;
   }
 }
