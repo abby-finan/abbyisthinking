@@ -37,7 +37,8 @@ export type JunkDrawerType =
   | "book"
   | "comic"
   | "interesting game theory"
-  | "map";
+  | "map"
+  | "link";
 
 export interface JunkDrawerItem {
   id: string;
@@ -73,7 +74,7 @@ export interface WorthItem {
   title: string;
   content: string;
   url?: string;
-  type?: "article" | "book" | "thought" | "link" | "other";
+  type?: "article" | "book" | "thought" | "link" | "quote" | "other";
 }
 
 export interface PortfolioData {
@@ -99,7 +100,7 @@ export const SECTIONS: {
   { id: "thinking", label: "Abby is thinking", shortLabel: "Thinking" },
   { id: "death-row-meal", label: "Abby's death row meal", shortLabel: "Death row meal" },
   { id: "open-questions", label: "Abby's open questions", shortLabel: "Open questions" },
-  { id: "junk-drawer", label: "Abby's digital junk drawer", shortLabel: "Junk drawer" },
+  { id: "junk-drawer", label: "Abby's digital junk drawer (shit i didnt build but I love)", shortLabel: "Junk drawer" },
   { id: "stats", label: "Abby's stats", shortLabel: "Stats" },
   { id: "idea-graveyard", label: "Abby's idea graveyard", shortLabel: "Idea graveyard" },
   { id: "hot-takes", label: "Abby's hot takes", shortLabel: "Hot takes" },

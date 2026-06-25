@@ -64,14 +64,19 @@ export function JunkDrawerSection({ data }: { data: PortfolioData }) {
     <ItemList
       items={data.junkDrawer.map((item) => (
         <div key={item.id}>
-          <ItemMeta>{item.type}</ItemMeta>
-          <ItemText>{item.title}</ItemText>
-          <ItemMeta>{item.content}</ItemMeta>
-          {item.url && (
-            <p className="mt-1 text-[11px] font-light text-[var(--text-muted)]/50">
-              {linkifyText(item.url)}
-            </p>
+          {item.url ? (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[13px] font-light leading-relaxed text-[var(--text-muted)] underline decoration-white/10 underline-offset-4 transition-colors hover:text-[var(--text-primary)]"
+            >
+              {item.title}
+            </a>
+          ) : (
+            <ItemText>{item.title}</ItemText>
           )}
+          <ItemMeta>{item.content}</ItemMeta>
         </div>
       ))}
     />
