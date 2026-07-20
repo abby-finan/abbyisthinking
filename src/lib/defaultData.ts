@@ -8,9 +8,32 @@ export const DEFAULT_DATA: PortfolioData = {
   thinking: [
     {
       id: "t1",
-      text: "Building word of mouth https://wrdofmouth.com. Get trusted recs from friends, not anonymous internet strangers.",
+      text: "fun little side project i've been working on called word of mouth https://wrdofmouth.com. Get trusted recs from friends, not anonymous internet strangers.",
       createdAt: new Date().toISOString(),
     },
+    {
+      id: "t2",
+      text: "career pivot thought: craving a career pivot, so am thinking about making the jump into GTM. I like games with scoreboards so it feels right. Probs a risk to totally start over my career BUT I recently read something that resonated w me and maybe it'll hit you: career wise, the comfortable choice is very often the wrong choice",
+      createdAt: new Date().toISOString(),
+    },
+    {
+      id: "t3",
+      text: "quick thought: every cocktail bar should have blue cheese stuffed olives.",
+      createdAt: new Date().toISOString(),
+    },
+    {
+      id: "t4",
+      text: "salt related thought: kosher salt is the most elite salt.",
+      createdAt: new Date().toISOString(),
+    },
+    {
+      id: "t5",
+      text: "animal related thought: more people should know about the Albatross. Animal w the largest wingspan (around 12 ft) and can stay in the air for YEARS, eats in the air, sleeps in the air, the muscles of its wings lock and they can glide for days without flapping. INSANE. WHY DOES NOBDOY TALK ABOUT THIS",
+      createdAt: new Date().toISOString(),
+    },
+
+
+
   ],
   deathRowMeal: [
     {
