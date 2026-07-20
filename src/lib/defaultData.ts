@@ -33,7 +33,7 @@ export const DEFAULT_DATA: PortfolioData = {
     },
     {
       id: "t6",
-      text: "book thought: the Red Rising series (by pierce brown) is a must read sci fi series, but it's weirdly siimilar to the Will of the Many by brandon sanderson which is also a banger",
+      text: "book thought: the Red Rising series (by pierce brown) is a must read sci fi series, but it's weirdly siimilar to the Will of the Many (by brandon sanderson) which is also a banger",
       createdAt: new Date().toISOString(),
     },
     {
@@ -102,7 +102,7 @@ export const DEFAULT_DATA: PortfolioData = {
     {
       id: "m12",
       name: "oreo dream extreme cheesecake",
-      whereToGet: "i know i know ... but get this from Cheesecake Factory i swear it's life changing",
+      whereToGet: "if you ever find yourself near a Cheesecake Factory .. i swear it's life changing",
     },
     {
       id: "m13",
