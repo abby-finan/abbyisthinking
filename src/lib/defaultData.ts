@@ -8,7 +8,7 @@ export const DEFAULT_DATA: PortfolioData = {
   thinking: [
     {
       id: "t1",
-      text: "fun little side project i've been working on called word of mouth https://wrdofmouth.com. Get trusted recs from friends, not anonymous internet strangers.",
+      text: "fun little side project i've been working on called word of mouth https://wrdofmouth.com. Get trusted recs from friends instead of relying on anonymous internet strangers' reviews.",
       createdAt: new Date().toISOString(),
     },
     {
