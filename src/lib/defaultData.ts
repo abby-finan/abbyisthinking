@@ -38,72 +38,72 @@ export const DEFAULT_DATA: PortfolioData = {
   deathRowMeal: [
     {
       id: "m1",
-      name: "Mojoes chicken smush",
+      name: "mojoes chicken smush",
       whereToGet: "Raleigh, NC. always ALWAYS get mojoes sauce on the side",
     },
     {
       id: "m2",
-      name: "Mini french toast eggo waffles",
+      name: "mini french toast eggo waffles",
       whereToGet: "Grocery store",
     },
     {
       id: "m3",
-      name: "Bernie's vinegar chicken",
+      name: "bernie's vinegar chicken",
       whereToGet: "Greenpoint, Brooklyn",
     },
     {
       id: "m4",
-      name: "Shirley temple with ELECTRIC sprite + extra cherries",
+      name: "shirley temple with electric ass sprite and extra cherries",
       whereToGet: "ideally served in a cup with crushed ice",
     },
     {
       id: "m5",
-      name: "Grilled branzino with chimichurri",
+      name: "grilled branzino with chimichurri",
       whereToGet: "Leon's Oysters Charleston, SC",
     },
     {
       id: "m6",
-      name: "Tuna nigiri, soy sauce, wasabi, ginger",
+      name: "tuna nigiri, soy sauce, wasabi, ginger",
       whereToGet: "As fresh as you can get it",
     },
     {
       id: "m7",
-      name: "Fresh hushpuppies w salted butter",
+      name: "fresh hushpuppies w salted butter",
       whereToGet: "42nd Street Oyster Bar Raleigh, NC",
     },
     {
       id: "m8",
-      name: "Chinese lemon pepper wet wings",
+      name: "chinese lemon pepper wet wings",
       whereToGet: "Jen Chan's Atlanta, GA",
     },
     {
       id: "m9",
-      name: "Twiced baked potato, extra loaded, add horseradish sauce",
+      name: "twiced baked potato, extra loaded, add horseradish sauce",
       whereToGet: "Angus Barn Raleigh, NC",
     },
     {
       id: "m10",
-      name: "Steamed crab legs",
+      name: "steamed crab legs",
       whereToGet: "@ home w butter and lemon",
     },
     {
       id: "m11",
-      name: "Banana bread",
+      name: "banana bread",
       whereToGet: "Mom",
     },
     {
       id: "m12",
-      name: "Oreo dream extreme cheesecake",
+      name: "oreo dream extreme cheesecake",
       whereToGet: "i know i know ... but get this from Cheesecake Factory i swear it's life changing",
     },
     {
       id: "m13",
-      name: "Hot glazed donut",
+      name: "the freshest and hottest glazed donut",
       whereToGet: "Krispy Kreme or Brightspot Donuts in Raleigh, NC",
     },
     {
       id: "m14",
-      name: "Griddled blueberry muffin",
+      name: "griddled blueberry muffin",
       whereToGet: "Au Cheval, NYC",
     },
     
@@ -278,7 +278,7 @@ export const DEFAULT_DATA: PortfolioData = {
     {
       id: "w1",
       type: "link",
-      title: "There is a mathematical truth to trust.",
+      title: "there is a mathematical truth to trust.",
       content: "Interesting game theory",
       url: "https://ncase.me/trust/",
     },
@@ -286,11 +286,13 @@ export const DEFAULT_DATA: PortfolioData = {
       id: "w2",
       type: "other",
       title: "calvin and hobbes",
-      content: "If people sat outside and looked at the stars each night, I'll bet they'd live a lot differently. https://eddygardiner.medium.com/looking-at-the-stars-2436a2dd36e2",
+      content: "If people sat outside and looked at the stars each night, I'll bet they'd live a lot differently.",
+      url: "https://eddygardiner.medium.com/looking-at-the-stars-2436a2dd36e2",
     },
     {
       id: "w3",
-      title: "The golden eternity by Jack Kerouac",
+      type: "quote",
+      title: "the golden eternity by Jack Kerouac",
       content: `I have lots of things to share now, in case we ever meet, concerning the message that was transmitted to me under a pine tree in North Carolina on a cold winter moonlit night. It said that Nothing Ever Happened, so don't worry. It's all like a dream. Everything is ecstasy, inside. We just don't know it because of our thinking-minds. But in our true blissful essence of mind is known that everything is alright forever and forever and forever. Close your eyes, let your hands and nerve-ends drop, stop breathing for 3 seconds, listen to the silence inside the illusion of the world, and you will remember the lesson you forgot, which was taught in immense milky way soft cloud innumerable worlds long ago and not even at all. It is all one vast awakened thing. I call it the golden eternity. It is perfect.
 We were never really born, we will never really die. It has nothing to do with the imaginary idea of a personal self, other selves, many selves everywhere: Self is only an idea, a mortal idea. That which passes into everything is one thing. It's a dream already ended. There's nothing to be afraid of and nothing to be glad about. I know this from staring at mountains months on end. They never show any expression, they are like empty space. Do you think the emptiness of space will ever crumble away? Mountains will crumble, but the emptiness of space, which is the one universal essence of mind, the vast awakenerhood, empty and awake, will never crumble away because it was never born
 The world you see is just a movie in your mind.
@@ -312,7 +314,7 @@ praying and being
 cool and singing
 by my woodstove
 making pancakes.`,
-      type: "quote",
+      url: "https://www.themarginalian.org/2014/03/12/jack-kerouac-golden-eternity/",
     },
   ],
 };
