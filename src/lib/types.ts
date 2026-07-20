@@ -96,9 +96,15 @@ export const SECTIONS: {
   id: SectionId;
   label: string;
   shortLabel: string;
+  subtitle?: string;
 }[] = [
   { id: "thinking", label: "Abby is thinking", shortLabel: "Thinking" },
-  { id: "junk-drawer", label: "Abby's digital junk drawer (shit i didnt build but I love)", shortLabel: "Junk drawer" },
+  {
+    id: "junk-drawer",
+    label: "Abby's digital junk drawer",
+    shortLabel: "Junk drawer",
+    subtitle: "shit i didnt build but I love",
+  },
   // { id: "open-questions", label: "Abby's open questions", shortLabel: "Open questions" },
   { id: "death-row-meal", label: "Abby's death row meal", shortLabel: "Death row meal" },
   // { id: "stats", label: "Abby's stats", shortLabel: "Stats" },

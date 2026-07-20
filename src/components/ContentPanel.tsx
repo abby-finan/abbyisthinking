@@ -58,9 +58,16 @@ export function ContentPanel({ sectionId, onClose, children }: ContentPanelProps
           className="fixed inset-0 z-40 flex flex-col items-center px-6 pb-28 pt-20 pointer-events-none"
         >
           <div className="panel-scroll pointer-events-auto w-full max-w-md flex-1 overflow-y-auto">
-            <p className="mb-10 text-center text-[11px] uppercase tracking-[0.3em] text-[var(--text-muted)]">
-              {section.label}
-            </p>
+            <div className="mb-10 text-center">
+              <p className="text-[11px] uppercase tracking-[0.3em] text-[var(--text-muted)]">
+                {section.label}
+              </p>
+              {section.subtitle && (
+                <p className="mt-2 text-[11px] font-light tracking-wide text-[var(--text-muted)]/50">
+                  {section.subtitle}
+                </p>
+              )}
+            </div>
             {children}
           </div>
           <button
