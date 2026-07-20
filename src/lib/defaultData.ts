@@ -13,7 +13,7 @@ export const DEFAULT_DATA: PortfolioData = {
     },
     {
       id: "t2",
-      text: "career pivot thought: craving a career pivot, so am thinking about making the jump into GTM. I like games with scoreboards so it feels right. Probs a risk to totally start over my career BUT I recently read something that resonated w me and maybe it'll hit you: career wise, the comfortable choice is very often the wrong choice",
+      text: "career pivot thought: craving a career pivot, so am thinking about making the jump into GTM. I like games with scoreboards so it feels right. Probs a risk to totally start over my career BUT I recently read something that resonated w me and maybe it'll hit you: career wise, the comfortable choice is very often the wrong choice.",
       createdAt: new Date().toISOString(),
     },
     {
@@ -28,12 +28,12 @@ export const DEFAULT_DATA: PortfolioData = {
     },
     {
       id: "t5",
-      text: "animal related thought: more people should know about the Albatross. Animal w the largest wingspan (around 12 ft) and can stay in the air for YEARS, eats in the air, sleeps in the air, the muscles of its wings lock and they can glide for days without flapping. INSANE. WHY DOES NOBDOY TALK ABOUT THIS",
+      text: "animal related thought: more people should know about the Albatross. Animal w the largest wingspan (around 12 ft) and can stay in the air for YEARS, eats in the air, sleeps in the air, the muscles of its wings lock and they can glide for days without flapping. INSANE. WHY DOES NOBDOY TALK ABOUT THIS.",
       createdAt: new Date().toISOString(),
     },
     {
       id: "t6",
-      text: "book thought: the Red Rising series (by pierce brown) is a must read sci fi series, but it's weirdly siimilar to the Will of the Many (by brandon sanderson) which is also a banger",
+      text: "book thought: the Red Rising series (by pierce brown) is a must read sci fi series, but it's weirdly siimilar to the Will of the Many (by brandon sanderson) which is also a banger.",
       createdAt: new Date().toISOString(),
     },
     {
