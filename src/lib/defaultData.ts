@@ -8,7 +8,7 @@ export const DEFAULT_DATA: PortfolioData = {
   thinking: [
     {
       id: "t1",
-      text: "Building Word of Mouth — https://wrdofmouth.com. Trusted service recs from friends, not anonymous internet strangers.",
+      text: "Building word of mouth https://wrdofmouth.com. service recs from friends, not anonymous internet strangers.",
       createdAt: new Date().toISOString(),
     },
   ],
@@ -102,7 +102,7 @@ export const DEFAULT_DATA: PortfolioData = {
     {
       id: "j1",
       type: "map",
-      title: "Tisometric nyc",
+      title: "isometric nyc",
       content: "Isometric map of NYC",
       url: "https://cannoneyed.com/isometric-nyc",
     },
