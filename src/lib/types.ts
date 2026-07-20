@@ -99,10 +99,10 @@ export const SECTIONS: {
 }[] = [
   { id: "thinking", label: "Abby is thinking", shortLabel: "Thinking" },
   { id: "death-row-meal", label: "Abby's death row meal", shortLabel: "Death row meal" },
-  { id: "open-questions", label: "Abby's open questions", shortLabel: "Open questions" },
+  // { id: "open-questions", label: "Abby's open questions", shortLabel: "Open questions" },
   { id: "junk-drawer", label: "Abby's digital junk drawer (shit i didnt build but I love)", shortLabel: "Junk drawer" },
-  { id: "stats", label: "Abby's stats", shortLabel: "Stats" },
-  { id: "idea-graveyard", label: "Abby's idea graveyard", shortLabel: "Idea graveyard" },
-  { id: "hot-takes", label: "Abby's hot takes", shortLabel: "Hot takes" },
+  // { id: "stats", label: "Abby's stats", shortLabel: "Stats" },
+  // { id: "idea-graveyard", label: "Abby's idea graveyard", shortLabel: "Idea graveyard" },
+  // { id: "hot-takes", label: "Abby's hot takes", shortLabel: "Hot takes" },
   { id: "worth-your-time", label: "Things worth your time", shortLabel: "Worth your time" },
 ];
