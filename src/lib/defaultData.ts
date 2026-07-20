@@ -31,8 +31,16 @@ export const DEFAULT_DATA: PortfolioData = {
       text: "animal related thought: more people should know about the Albatross. Animal w the largest wingspan (around 12 ft) and can stay in the air for YEARS, eats in the air, sleeps in the air, the muscles of its wings lock and they can glide for days without flapping. INSANE. WHY DOES NOBDOY TALK ABOUT THIS",
       createdAt: new Date().toISOString(),
     },
-
-
+    {
+      id: "t6",
+      text: "book thought: the Red Rising series (by pierce brown) is a must read sci fi series, but it's weirdly siimilar to the Will of the Many by brandon sanderson which is also a banger",
+      createdAt: new Date().toISOString(),
+    },
+    {
+      id: "t7",
+      text: "deeply inquisitive thought & broad generalization: why do all dads love pork chops, split pea soup, pot roast, bratwursts, reubens, cashews, ipads, etc.?",
+      createdAt: new Date().toISOString(),
+    },
 
   ],
   deathRowMeal: [
@@ -84,7 +92,7 @@ export const DEFAULT_DATA: PortfolioData = {
     {
       id: "m10",
       name: "steamed crab legs",
-      whereToGet: "@ home w butter and lemon",
+      whereToGet: "at home w butter and lemon",
     },
     {
       id: "m11",
